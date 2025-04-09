@@ -82,10 +82,43 @@
             margin-bottom: 10px;
         }
 
+        /* Центрирование изображений начиная с блока 2 */
+        #about img,
+        #skills img,
+        #projects img,
+        #motivator-bot img,
+        #game-no-exit img,
+        #task-app img,
+        #contacts img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Специальные стили для круглого аватара в первом блоке */
+        #header img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
         /* Адаптивность */
         @media (max-width: 768px) {
             .portfolio-block {
                 padding: 20px;
+            }
+            #about img,
+            #skills img,
+            #projects img,
+            #motivator-bot img,
+            #game-no-exit img,
+            #task-app img,
+            #contacts img {
+                max-width: 100%;
             }
         }
     </style>
@@ -94,14 +127,14 @@
     <div class="container">
         <!-- Блок 1: Заголовок и контакты -->
         <div class="portfolio-block" id="header">
-            <img src="profile-image.png" alt="Фото Артема Лаврова" style="max-width: 200px; border-radius: 50%; display: block; margin: 0 auto 20px;">
+            <img src="profile-image.png" alt="Фото Артема Лаврова">
             <h1>Артем Лавров</h1>
             <h2>Программирую на Python, Создаю Chat-боты, Игры, AI-ассистенты</h2>
         </div>
 
         <!-- Блок 2: О себе -->
         <div class="portfolio-block" id="about">
-            <img src="diplom_team_dev.png" alt="Обо мне" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <img src="diplom_team_dev.png" alt="Обо мне">
             <h1>О себе</h1>
             <p>Прошел курс по профессии "Интернет маркетолог" по специализации создания и раскрутки интернет магазинов от Business Inside.</p>
             <p>На данный момент прохожу курс по программированию на Python с нуля от Зерокодер.</p>
@@ -143,7 +176,7 @@
         <!-- Блок 5: Чат-бот AI-ассистент -->
         <div class="portfolio-block" id="motivator-bot">
             <h1>Чат-Бот AI-ассистент в Telegram</h1>
-            <img src="bot_AI.png" alt="Чат-бот AI-ассистент" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <img src="bot_AI.png" alt="Чат-бот AI-ассистент">
             <p><strong>NeuroBot1</strong> — это инновационный чат-бот, созданный для поддержания вашей мотивации и духа на высоком уровне. С его помощью вы сможете:</p>
             <ul class="project-features">
                 <li>Устанавливать и отслеживать свои цели.</li>
@@ -151,7 +184,7 @@
                 <li>Общаться с ботом в удобное для вас время и получать мгновенную поддержку.</li>
             </ul>
             <p><strong>NeuroBot1</strong> — это ваш надежный помощник на пути к успеху и саморазвитию. Подключайтесь и начните свой день с заряда позитива и вдохновения!</p>
-            <img src="bot_motivator.png" alt="Чат-бот AI-ассистент" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <img src="bot_motivator.png" alt="Чат-бот AI-ассистент">
             <h2>Особенности проекта</h2>
             <ul class="project-features">
                 <li><strong>Ежедневные мотивационные цитаты</strong> - Пользователи получают вдохновляющие цитаты каждый день, чтобы начать утро с позитивного настроя.</li>
@@ -170,18 +203,15 @@
             <h1>Проект - Игра - No-Exit</h1>
             <p>Игра разработана в командной разработке в целях закрепления навыков программирования с использованием библиотеки Pygame
                 и основных алгоритмов Объектно ориентированного программирования и SOLID принципов. Игра представляет собой 2D-платформер с тремя уровнями разными по сложности и интересным сюжетом.</p>
-            <img src="no_exit.png" alt="Игра No-Exit" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <img src="no_exit.png" alt="Игра No-Exit">
         </div>
 
         <!-- Блок 7: Приложение задачник -->
         <div class="portfolio-block" id="task-app">
             <h1>Проект - Приложение - Задачник</h1>
             <p>Учебный проект предназначен для записи и редактирования любых повседневных задач и целей. Своего рода Блокнот.</p>
-            <img src="task_manager.png" alt="Приложение задачник" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <img src="task_manager.png" alt="Приложение задачник">
         </div>
-
-
-
 
         <!-- Блок 8: Контактная информация -->
         <div class="portfolio-block contacts" id="contacts">
