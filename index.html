@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Артема Лаврова</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Стили блоков (страниц портфолио) */
+        .portfolio-block {
+            background-color: rgba(40, 60, 80, 0.5);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-block:hover {
+            transform: translateY(-5px);
+        }
+
+        h1, h2, h3 {
+            color: #010101;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        /* Стили для контактной информации */
+        .contacts {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contacts a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стили для проектов */
+        .project-features {
+            margin-left: 20px;
+        }
+
+        .project-features li {
+            margin-bottom: 10px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .portfolio-block {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Блок 1: Заголовок и контакты -->
+        <div class="portfolio-block" id="header">
+            <img src="profile-image.png" alt="Фото Артема Лаврова" style="max-width: 200px; border-radius: 50%; display: block; margin: 0 auto 20px;">
+            <h1>Артем Лавров</h1>
+            <h2>Программирую на Python, Создаю Chat-боты, Игры, AI-ассистенты</h2>
+        </div>
+
+        <!-- Блок 2: О себе -->
+        <div class="portfolio-block" id="about">
+            <img src="diplom_team_dev.png" alt="Обо мне" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <h1>О себе</h1>
+            <p>Прошел курс по профессии "Интернет маркетолог" по специализации создания и раскрутки интернет магазинов от Business Inside.</p>
+            <p>На данный момент прохожу курс по программированию на Python с нуля от Зерокодер.</p>
+            <p>Планирую получить профессию Промт-инженера от Зерокодер, чтоб помогать людям автоматизировать свои бизнесы и освобождать время для жизни.</p>
+            <p>Хочу создавать крутые продукты, которые делают жизнь людей лучше.</p>
+            <p>Люблю решать сложные задачи и постоянно развиваюсь в новых технологиях.</p>
+            <p>Интересуюсь машинным обучением и разработкой веб приложений.</p>
+        </div>
+
+        <!-- Блок 3: Навыки и знания -->
+        <div class="portfolio-block" id="skills">
+            <h1>Навыки и знания</h1>
+            <h2>Языки программирования:</h2>
+            <p>Python</p>
+
+            <h2>Базы Данных:</h2>
+            <p>MySQL, PostgreSQL</p>
+
+            <h2>Инструменты и технологии:</h2>
+            <p>Git, Linux, Repl.it, PyCharm</p>
+
+            <h2>Библиотеки:</h2>
+            <p>Flask, requests, NumPy, Pandas, Pygame, Pillow, Django, Tkinter</p>
+
+            <h2>Прочие навыки:</h2>
+            <p>Web - разработка, разработка чат ботов на Python, No-code разработка чат-ботов на Leadteh</p>
+        </div>
+
+        <!-- Блок 4: Учебные проекты -->
+        <div class="portfolio-block" id="projects">
+            <h1>Мои Учебные Проекты</h1>
+            <ul>
+                <li>Чат-бот Ai-ассистент</li>
+                <li>Приложение задачник</li>
+                <li>Игра на Pygame "No-Exit"</li>
+            </ul>
+        </div>
+
+        <!-- Блок 5: Чат-бот AI-ассистент -->
+        <div class="portfolio-block" id="motivator-bot">
+            <h1>Чат-Бот AI-ассистент в Telegram</h1>
+            <img src="bot_AI.png" alt="Чат-бот AI-ассистент" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <p><strong>NeuroBot1</strong> — это инновационный чат-бот, созданный для поддержания вашей мотивации и духа на высоком уровне. С его помощью вы сможете:</p>
+            <ul class="project-features">
+                <li>Устанавливать и отслеживать свои цели.</li>
+                <li>Получать персонализированные рекомендации для поддержания мотивации.</li>
+                <li>Общаться с ботом в удобное для вас время и получать мгновенную поддержку.</li>
+            </ul>
+            <p><strong>NeuroBot1</strong> — это ваш надежный помощник на пути к успеху и саморазвитию. Подключайтесь и начните свой день с заряда позитива и вдохновения!</p>
+            <img src="bot_motivator.png" alt="Чат-бот AI-ассистент" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <h2>Особенности проекта</h2>
+            <ul class="project-features">
+                <li><strong>Ежедневные мотивационные цитаты</strong> - Пользователи получают вдохновляющие цитаты каждый день, чтобы начать утро с позитивного настроя.</li>
+                <li><strong>Персонализированные советы</strong> - Бот анализирует предпочтения и активность пользователя, чтобы предоставлять индивидуальные рекомендации по поддержанию мотивации.</li>
+                <li><strong>Установка и отслеживание целей</strong> - Возможность устанавливать краткосрочные и долгосрочные цели и отслеживать их выполнение.</li>
+                <li><strong>Напоминания и уведомления</strong> - Автоматические напоминания о важных задачах и целях, чтобы пользователи оставались на правильном пути.</li>
+                <li><strong>Интерактивные опросы и тесты</strong> - Опросы и тесты для оценки текущего уровня мотивации и предоставления рекомендаций по его улучшению.</li>
+                <li><strong>Поддержка чат-бота 24/7</strong> - Пользователи могут обращаться к боту в любое время для получения мгновенной поддержки и советов.</li>
+                <li><strong>Интеграция с календарем</strong> - Синхронизация с календарем пользователя для планирования мотивационных сессий и напоминаний.</li>
+                <li><strong>Мультимедийный контент</strong> - Предоставление мотивационных видео, подкастов и статей для разнообразия и углубленного вдохновения.</li>
+            </ul>
+        </div>
+
+        <!-- Блок 6: Игра на Pygame -->
+        <div class="portfolio-block" id="game-no-exit">
+            <h1>Проект - Игра - No-Exit</h1>
+            <p>Игра разработана в командной разработке в целях закрепления навыков программирования с использованием библиотеки Pygame
+                и основных алгоритмов Объектно ориентированного программирования и SOLID принципов. Игра представляет собой 2D-платформер с тремя уровнями разными по сложности и интересным сюжетом.</p>
+            <img src="no_exit.png" alt="Игра No-Exit" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+        </div>
+
+        <!-- Блок 7: Приложение задачник -->
+        <div class="portfolio-block" id="task-app">
+            <h1>Проект - Приложение - Задачник</h1>
+            <p>Учебный проект предназначен для записи и редактирования любых повседневных задач и целей. Своего рода Блокнот.</p>
+            <img src="task_manager.png" alt="Приложение задачник" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+        </div>
+
+
+
+
+        <!-- Блок 8: Контактная информация -->
+        <div class="portfolio-block contacts" id="contacts">
+            <h1>Контактная информация</h1>
+            <p>Артем Лавров</p>
+            <p>e-mail: <a href="mailto:lavrovartem0511@gmail.com">lavrovartem0511@gmail.com</a></p>
+            <p>Git: <a href="https://github.com/Crowley55555" target="_blank">Crowley55555</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">[ссылка]</a></p>
+        </div>
+    </div>
+</body>
+</html>
