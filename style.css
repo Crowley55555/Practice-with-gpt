@@ -1,0 +1,153 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили блоков (страниц портфолио) */
+.portfolio-block {
+    background-color: rgba(40, 60, 80, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-block:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+    color: #010101;
+}
+
+h1 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+/* Стили для контактной информации */
+.contacts {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contacts a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для проектов */
+.project-features {
+    margin-left: 20px;
+}
+
+.project-features li {
+    margin-bottom: 10px;
+}
+
+/* Центрирование изображений */
+#about img,
+#skills img,
+#projects img,
+#motivator-bot img,
+#game-no-exit img,
+#task-app img,
+#parser-cian img,
+#contacts img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Специальные стили для круглого аватара в первом блоке */
+#header img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Стили для блока "О себе" */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Кнопка сохранения в PDF */
+.pdf-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.pdf-button:hover {
+    background-color: #2980b9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .portfolio-block {
+        padding: 20px;
+    }
+
+    #about img,
+    #skills img,
+    #projects img,
+    #motivator-bot img,
+    #game-no-exit img,
+    #task-app img,
+    #parser-cian img,
+    #contacts img {
+        max-width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image, .about-text {
+        min-width: 100%;
+    }
+}
